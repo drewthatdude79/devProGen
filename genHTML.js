@@ -1,5 +1,6 @@
-const userAction = async () => {
-    const response = await fetch('https://api.github.com/user:drewthatdude79');
-    const myJson = await response.json();
-  }
-  
+// Setting up prompts
+const name = prompt("What is the user's name?");
+console.log(name);
+
+const color = prompt("What is your favorite color?");
+console.log(color);
