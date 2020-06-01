@@ -1,4 +1,9 @@
-const htmlStyle = function(userName, color) {
+const fs = require("fs");
+const util = require("util");
+
+const writeFilePromise = util.promisify(fs.writeFile);
+
+const htmlStyle = async function(userName, color) {
   const stringOf = `
 
 <!DOCTYPE html>
@@ -22,7 +27,11 @@ const htmlStyle = function(userName, color) {
   </div>
 </div>
 </body>
-</html>`
+</html>
+`;
+
+await writeFilePromise(htmlStyle);
+
 }
 
 module.exports = {
