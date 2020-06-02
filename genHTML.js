@@ -14,6 +14,21 @@ function userInput() {
         },
         {
             type: "input",
+            name: "location",
+            message: "Where are you from?"
+        },
+        {
+            type: "input",
+            name: "github",
+            message: "Enter your GitHub Username"
+        },
+        {
+            type: "input",
+            name: "linkedin",
+            message: "Enter your LinkedIn URL."
+        },
+        {
+            type: "input",
             name: "color",
             message: "What is your favorite color?",
             choices: [
